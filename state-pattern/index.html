@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>状态模式</title>
+    </head>
+    <body>
+        <section>
+            <h1>第一个反例：电灯开关</h1>
+            <p>虽然这是一个反例，但是我依然要说，当状态的数量、转换路线是稳定的、简单的时候，<code>if-else</code>就是最好的状态机</p>
+            <a href="./simple-light.js" target="_blank">源码</a>
+            <div>
+                <iframe src="./simple-light.html">
+                </iframe>
+            </div>
+        </section>
+
+        <section>
+            <h1>改进：状态模式下的“电灯开关”</h1>
+            <p>使用状态模式实现“电灯开关”的好处在于，改变状态关系的时候，只需要修改与之相关的状态类。这在一定程度上，更加“开闭原则”一点；它通过state这个类的多态性内化了if-else。</p>
+            <p>坏处也很明显，要增加一大堆状态类。另外，我觉得这个还不是很“开闭原则”。</p>
+            <a href="./simple-light-with-state-pattern.js" target="_blank">源码</a>
+            <div>
+                <iframe src="./simple-light-with-state-pattern.html">
+                </iframe>
+            </div>
+        </section>
+    </body>
+</html>
