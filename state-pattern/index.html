@@ -35,5 +35,26 @@
                 </iframe>
             </div>
         </section>
+
+        <section>
+          <h1>改进：状态模式下的“文件上传”</h1>
+          <p>有了状态模式后，新增、删除状态、修改状态之间的关联，就相对方便多了。</p>
+          <p>下面的这个实现当然还有可以改进的地方，比如：每次新增、删除状态，都需要修改init函数，我们可以把新增、删除这个动作“注册”化，这样就相对好一些了。</p>
+          <a href="./file-upload-with-state-pattern.js" target="_blank">源码</a>
+          <div>
+            <iframe src="./file-upload-with-state-pattern.html">
+            </iframe>
+          </div>
+        </section>
+
+        <section>
+            <h1>js的状态模式</h1>
+            <p>的确，js这种非强类型限制的语言，没太大必要用类来承载“状态”，普通的对象面量就可以了。下面看一下，js版的状态模式下的“点灯开关”</p>
+            <a href="./simple-light-with-js-state-pattern.js" target="_blank">源码</a>
+            <div>
+                <iframe src="./simple-light-with-js-state-pattern.html">
+                </iframe>
+            </div>
+        </section>
     </body>
 </html>
