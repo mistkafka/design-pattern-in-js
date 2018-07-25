@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>中介者模式</title>
+    </head>
+    <body>
+        <section>
+            <h1>第一个反例：聊天室</h1>
+            <p>从源码可以看出，这真的是一个灾难！</p>
+            <p>其实，中介者模式是非常容易理解的设计模式。记得第一次实现Demo版的QQ的时候，虽然没学过什么设计模式，也知道要实现一个类似的“调节者”来管理用户。</p>
+            <a href="chat.js" target="_blank">源码</a>
+            <a href="./chat.html" target="_blank">Demo</a>
+            <div>
+                <iframe src="./chat.html"></iframe>
+            </div>
+        </section>
+
+        <section>
+            <h1>聊天室——中介者模式</h1>
+            <p>让我们用一个Hub来处理不同用户之间的行为处理。</p>
+            <p>可以看到，用户之间的交互、引用全部都由中介者来处理掉了！</p>
+            <a href="./chat-with-mediator-pattern.js" target="_blank">源码</a>
+            <a href="./chat-with-mediator-pattern.html" target="_blank">Demo</a>
+            <div>
+                <iframe src="./chat-with-mediator-pattern.html"></iframe>
+            </div>
+        </section>
+
+    </body>
+</html>
