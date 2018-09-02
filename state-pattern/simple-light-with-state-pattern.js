@@ -11,6 +11,9 @@ Light.prototype.init = function () {
     this.currState = this.onState;
 
     $switchBtn.addEventListener('click', () => {
+        // 每个状态类都实现`changeState'，
+        // 电灯类用`currState'保存“当前状态”
+        // 通过多态，将原本的if-else内化掉
         this.currState.changeState();
     });
 }
@@ -18,6 +21,7 @@ Light.prototype.init = function () {
 function State(light) {
     this.light = light;
 }
+
 
 State.prototype.changeState = function () {
     throw Error('请实现changeState');
